@@ -55,7 +55,8 @@ class Main extends React.Component {
     });
   };
 
-  handleChangeForm = () => {
+  handleChangeForm = (event) => {
+    event.preventDefault();
     const change = this.state.change;
     const lists = this.state.listsUnCompleted;
     const newName = this.state.listOnInput;
@@ -157,7 +158,7 @@ class Main extends React.Component {
           type="button"
           value="Cancel"
           name="Submit"
-          className="btn-submit"
+          className={`btn-submit ${this.props.theme[0]}`}
           onClick={() => {
             this.cancelHandle();
           }}
@@ -167,7 +168,7 @@ class Main extends React.Component {
 
     return (
       <div className="wrapper">
-        <div className="container bg-white">
+        <div className={`container ${this.props.theme[0]}`}>
           <h2 className="container-header text-center">{!change.active ? "Tambah yang harus dilakukan" : `Mengedit pekerjaan '${change.name}'`}</h2>
           <form
             className="form"
@@ -184,6 +185,7 @@ class Main extends React.Component {
                 type="text"
                 id="title"
                 name="title"
+                class={this.props.theme[0]}
                 value={this.state.listOnInput}
                 onChange={(event) => {
                   this.handleChange(event);
@@ -192,16 +194,16 @@ class Main extends React.Component {
             </div>
 
             {btnCancel}
-            <input type="submit" value={!change.active ? "Submit" : "Edit"} name="Submit" className="btn-submit" />
+            <input type="submit" value={!change.active ? "Submit" : "Edit"} name="Submit" className={`btn-submit ${this.props.theme[0]}`} />
           </form>
         </div>
 
-        <div className="container">
+        <div className={`container ${this.props.theme[0]}`}>
           <h2 className="container-header">Yang harus dilakukan</h2>
           <div className="list-item" id="todos">
             {listsUnCompleted.map((list) => {
               return (
-                <div className="item">
+                <div className={`item ${this.props.theme[1]}`}>
                   <div className="inner">
                     <h2>{list.name}</h2>
                   </div>
@@ -225,12 +227,12 @@ class Main extends React.Component {
           </div>
         </div>
 
-        <div className="container">
+        <div className={`container ${this.props.theme[0]}`}>
           <h2 className="container-header">Yang sudah dilakukan</h2>
           <div className="list-item" id="completed-todos">
             {listsCompleted.map((list) => {
               return (
-                <div className="item">
+                <div className={`item ${this.props.theme[1]}`}>
                   <div className="inner">
                     <h2>{list.name}</h2>
                   </div>

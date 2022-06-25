@@ -1,11 +1,54 @@
 header {
-  background: #292d36;
   padding: 16px;
+}
+
+.dark {
+  background-color: #292d36;
   color: white;
 }
 
-.theme {
+.dark2 {
+  background-color: #22252d;
+  color: white;
+}
+
+input[type="text"].dark {
   background-color: #292d36;
+}
+
+.btn-submit.dark {
+  background-color: #292d36;
+}
+
+input[type="text"].dark:hover,
+input[type="text"].dark:focus {
+  background-color: #22252d;
+}
+
+.light {
+  background-color: white;
+  color: #292d36;
+}
+
+.light2 {
+  background-color: #f9f9f9;
+  color: #292d36;
+}
+
+input[type="text"].light {
+  background-color: white;
+}
+
+.btn-submit.light {
+  background-color: white;
+}
+
+input[type="text"].light:hover,
+input[type="text"].light:focus {
+  background-color: #f9f9f9;
+}
+
+.theme {
   padding: 5px;
   padding-top: 10px;
   margin: 25px auto;
@@ -14,7 +57,6 @@ header {
   text-align: center;
   width: 120px;
   cursor: default;
-  color: white;
 }
 
 .theme span {
@@ -22,8 +64,20 @@ header {
   cursor: pointer;
 }
 
-.theme span:hover {
-  opacity: 1;
+.theme span.dark {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.theme span.light {
+  color: rgba(41, 45, 54, 0.5);
+}
+
+.theme span.light.light-icon {
+  color: rgba(41, 45, 54, 1);
+}
+
+.theme span.dark.dark-icon {
+  color: rgba(255, 255, 255, 1);
 }
 
 .wrapper {
@@ -36,28 +90,17 @@ header {
   width: 1024px;
   border-radius: 8px;
   margin: 16px;
-  background: #292d36;
   padding: 16px;
   flex-grow: 1;
   height: fit-content;
-  color: white;
 }
 
 .item {
   border-radius: 16px;
   margin-top: 16px;
   padding: 12px 24px 12px 24px;
-  background: #22252d;
   display: flex;
   align-items: center;
-}
-
-.item > .inner h2 {
-  margin-bottom: unset;
-}
-
-.item > .inner p {
-  margin-top: 5px;
 }
 
 .form {
@@ -81,7 +124,6 @@ header {
 
 input[type="text"] {
   font-family: Raleway;
-  background: #f9f9f9;
   border: 2px solid #5f30e2;
   border-radius: 8px;
   padding: 16px;
@@ -106,12 +148,11 @@ input[type="text"] {
 }
 
 .btn-submit:hover {
-  background: #5f30e2;
+  background-color: #5f30e2;
   color: white;
 }
 
 input[type="text"],
-input[type="date"],
 .btn-submit:focus {
   outline: none;
 }
