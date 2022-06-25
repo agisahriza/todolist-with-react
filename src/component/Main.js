@@ -44,7 +44,7 @@ class Main extends React.Component {
     });
   };
 
-  cancleHandle = () => {
+  cancelHandle = () => {
     this.setState({
       change: {
         active: false,
@@ -155,11 +155,11 @@ class Main extends React.Component {
       btnCancel = (
         <input
           type="button"
-          value="Cancle"
+          value="cancel"
           name="Submit"
           className="btn-submit"
           onClick={() => {
-            this.cancleHandle();
+            this.cancelHandle();
           }}
         />
       );
