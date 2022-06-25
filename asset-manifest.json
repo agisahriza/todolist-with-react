@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/todolist-with-react/static/css/main.23ea9a46.css",
-    "main.js": "/todolist-with-react/static/js/main.588d655b.js",
+    "main.css": "/todolist-with-react/static/css/main.e2f6c9cf.css",
+    "main.js": "/todolist-with-react/static/js/main.a849fffe.js",
     "static/js/787.5eba1a07.chunk.js": "/todolist-with-react/static/js/787.5eba1a07.chunk.js",
     "static/media/undo-ouline.svg": "/todolist-with-react/static/media/undo-ouline.412baea36049c303fc01.svg",
     "static/media/trash-outline.svg": "/todolist-with-react/static/media/trash-outline.8b83dde72d323a5878c3.svg",
@@ -10,12 +10,12 @@
     "index.html": "/todolist-with-react/index.html",
     "static/media/change.svg": "/todolist-with-react/static/media/change.97b144bf08f268da7226.svg",
     "static/media/check-solid.svg": "/todolist-with-react/static/media/check-solid.019b32b9b5d5a023a4a7.svg",
-    "main.23ea9a46.css.map": "/todolist-with-react/static/css/main.23ea9a46.css.map",
-    "main.588d655b.js.map": "/todolist-with-react/static/js/main.588d655b.js.map",
+    "main.e2f6c9cf.css.map": "/todolist-with-react/static/css/main.e2f6c9cf.css.map",
+    "main.a849fffe.js.map": "/todolist-with-react/static/js/main.a849fffe.js.map",
     "787.5eba1a07.chunk.js.map": "/todolist-with-react/static/js/787.5eba1a07.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.23ea9a46.css",
-    "static/js/main.588d655b.js"
+    "static/css/main.e2f6c9cf.css",
+    "static/js/main.a849fffe.js"
   ]
 }
