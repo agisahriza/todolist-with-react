@@ -155,7 +155,7 @@ class Main extends React.Component {
       btnCancel = (
         <input
           type="button"
-          value="cancel"
+          value="Cancel"
           name="Submit"
           className="btn-submit"
           onClick={() => {
